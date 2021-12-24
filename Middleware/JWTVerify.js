@@ -5,7 +5,7 @@ const jwtVerify = (req, res, next) => {
 
     if(!token) return res.status(406).send({ error: true, message: 'Error Token', detail: 'Token Tidak Ditemukan!' })
 
-    jwt.verify(token, 'abc123', (err, dataToken) => {
+    jwt.verify(token, 'parcel5', (err, dataToken) => {
         try {
             if(err) throw err 
 
