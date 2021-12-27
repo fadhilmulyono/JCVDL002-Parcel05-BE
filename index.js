@@ -10,10 +10,10 @@ app.use(cors())
 app.use(express.json())
 
 // Init PORT
-const PORT = 5000 
+const PORT = 2005 
 
 // Import Routers
-const UserRouter = require('./Routers/UserRouter')
+const Router = require('./Routers/Routers')
 
 // Routing
 app.get('/', (req, res) => {
@@ -22,6 +22,6 @@ app.get('/', (req, res) => {
     )
 })
 
-app.use('/user', UserRouter)
+// app.use('/user', Router)
 
 app.listen(PORT, () => console.log('API RUNNING ON PORT ' + PORT))

@@ -1,11 +1,20 @@
 {
   "name": "jcvdl002-parcelbe-05",
   "version": "1.0.0",
-  "description": "",
+  "description": "Priority: High Target Date: October 26, 2021 11:03 AM",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "dev",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.15"
+  }
 }
